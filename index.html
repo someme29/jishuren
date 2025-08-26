@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex">
+    <base target="_top">
+    <style>
+      html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+      iframe { width: 100%; height: 100%; border: none; }
+    </style>
+  </head>
+  <body>
+    <iframe id="gasiframe" src="about:blank"></iframe>
+    <script>
+      window.onload = () => {
+        const originalAppUrl = 'https://script.google.com/macros/s/AKfycbylkxnhaLCGJ_2ZtgN2HwErXCzdIgDhmVeMS5FQHFz3MzO2mg6i9OTyO_5sDablBTidcA/exec';//RADIO用
+        const iframe = document.getElementById('gasiframe');
+        iframe.src = originalAppUrl + window.location.search;
+      };
+    </script>
+  </body>
+</html>
